@@ -19,6 +19,7 @@ $("#submitmsg").click(function(){
             var response = JSON.parse(data);
             if (response['redirect'] != '')
                 window.location = response['redirect'];
+            loadChat();
         }
     );		
     $("#usermsg").attr("value", "");
@@ -32,6 +33,7 @@ $(window).focus(function(){
 
 //submit form with Enter (not with Shift + Enter)
 $('.emoji-picker-container').keypress(function (e) {
+    scrollHeight = $('.emoji-picker-containter')
     if(e.which === 13 && !e.shiftKey) {
         e.preventDefault();
         $('.emoji-wysiwyg-editor').blur();
