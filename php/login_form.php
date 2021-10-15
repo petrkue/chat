@@ -4,7 +4,7 @@
             <html>
                 <head>
                     <link rel="icon" type="image/png" href="/media/favicon.ico"/>
-                    <title>Chat - Customer Module</title>
+                    <title>Přihlášení</title>
                     <meta name="viewport" content=""/>
                     <link type="text/css" rel="stylesheet" href="css/style.css" />
                     <link type="text/css" rel="stylesheet" href="css/style_mobile.css" />

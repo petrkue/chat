@@ -77,7 +77,7 @@ if(isset($_SESSION['name'])){
     }
     else {
         $sql = "INSERT INTO chat (username, date_created, message_text, message_type, message_show, room)
-                VALUES ('".$_SESSION['name']."', '".date("Y-m-d H:i:s")."', '".strip_tags(nl2br(htmlspecialchars($text)), '<br>')."', 1, true, '$room')";
+                VALUES ('".$_SESSION['name']."', '".date("Y-m-d H:i:s")."', '".strip_tags(convertURLs(nl2br(htmlspecialchars($text))), '<br><a>')."', 1, true, '$room')";
 
         if ($conn->query($sql) !== TRUE) {
             $error = "Error: " . $sql . "<br>" . $conn->error;
@@ -97,6 +97,12 @@ function base_url(){
       isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
       $_SERVER['SERVER_NAME']
     );
-  }
+}
+
+function convertURLs($string)
+{
+    $url = '/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/';   
+    return preg_replace($url, '<a href="$0" target="_blank" title="$0">$0</a>', $string);
+}
 
 ?>

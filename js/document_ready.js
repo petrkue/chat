@@ -8,6 +8,7 @@ $(document).ready(function(){
     heightToScroll = $("#chatbox").prop("scrollHeight");
     $("#chatbox").animate({ scrollTop: heightToScroll }, 100);
 
+
 	
 });
 
@@ -18,7 +19,7 @@ $( 'textarea' ).ready(function() {
 		popupButtonClasses: 'fa fa-smile-o'
 		});
 		window.emojiPicker.discover();
-		
+		$('.emoji-wysiwyg-editor').focus();
   });
 
   

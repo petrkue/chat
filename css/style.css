@@ -117,6 +117,16 @@
         color: white;
         margin: 2px 10px 2px auto;
     }
+    .msgMy a {
+        color: white;
+        text-decoration: underline white;
+    }
+
+    .msgMy a:hover {
+        color: white;
+        font-style: italic;
+    }
+
     .msgCentral {
         margin:10px 10px 10px 10px;
         text-align: center;
