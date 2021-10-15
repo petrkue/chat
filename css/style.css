@@ -1,0 +1,158 @@
+/* CSS Document */
+@media only screen and (min-device-width: 701px) {
+    body {
+        font:12px arial;
+        color: #222;
+        text-align:center;
+        padding:35px; }
+    
+    form, p, span {
+        margin:0;
+        padding:0; }
+    
+    input { font:18px arial; }
+
+    
+    #wrapper, #loginform {
+        margin:0 auto;
+        padding-bottom:25px;
+        background:#ffffff;
+        width:100vw;
+        height: 100vh;
+    }
+    
+    #loginform {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        padding: 10px;
+    }
+
+    #loginform h1 {
+        font-size: 36px;
+    }
+
+    #loginform p {
+        padding: 15px;
+    }
+    
+    #chatbox {
+        text-align:left;
+        margin:0 auto;
+        margin-bottom:25px;
+        padding:10px;
+        background:rgb(255, 255, 255);
+        height:80%;
+        width:90%;
+        border:1px solid #ACD8F0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .resize-ta {
+        resize: vertical;
+        max-height: 100px !important;
+    }
+
+    .emoji-picker-container {
+        float: left;
+        margin-left: 5%;
+        width: calc(90% - 95px);
+        display:block;
+        
+    }
+
+    .emoji-wysiwyg-editor {
+        text-align: left !important;
+        display: block !important;
+    }
+    
+    #submitmsg {
+        margin-right: 5%;
+        background: hsl(204, 74%, 51%) !important;
+    }
+    
+    .error { color: #ff0000; }
+    
+    #menu {
+        padding: 15px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .welcome { 
+        margin-top: 4px;
+        font-size: 18px;
+        float:left; 
+    }
+    
+    .logout { 
+        float:right; 
+        
+    }
+    .logout a {
+        color: white;
+        text-decoration: none;
+    }
+    .logout a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .msgTheirs {
+        margin:2px 10px 2px 10px;
+        width: fit-content;
+        padding: 12px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 20px 20px 20px 20px;
+        color: rgb(0, 0, 0)
+    }
+    .msgMy {
+        width: fit-content;
+        max-width: 90%;
+        padding: 12px;
+        background-color: hsl(204, 86%, 53%);
+        border-radius: 20px 20px 20px 20px;
+        color: white;
+        margin: 2px 10px 2px auto;
+    }
+    .msgCentral {
+        margin:10px 10px 10px 10px;
+        text-align: center;
+        color: rgb(117, 117, 117)
+    }
+    .message_body {
+        width: 100%;
+        display: block;
+    }
+
+    .time_stamp_my {
+        margin-right: 10px;
+        margin-left: auto;
+        width: fit-content;
+        color: grey;
+        font-size: 14px;
+    }
+
+    .time_stamp_central {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    .time_stamp_theirs {
+        margin-right: auto;
+        margin-left: 10px;
+        width: fit-content;
+        color: grey;
+        font-size: 14px;
+    }
+    .sender {
+        margin-right: auto;
+        margin-left: 10px;
+        width: fit-content;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

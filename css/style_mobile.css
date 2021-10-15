@@ -1,0 +1,192 @@
+/* CSS Document */
+@media only screen and (max-device-width: 701px) {
+    body {
+        font:12px arial;
+        color: #222;
+        text-align:center;
+        padding:35px; }
+    
+    form, p, span {
+        margin:0;
+        padding:0; }
+    
+    input { font:18px arial; }
+
+    
+    #wrapper, #loginform {
+        margin:0 auto;
+        padding-bottom:25px;
+        background:#ffffff;
+        width:100vw;
+        height: 100vh;
+        font-size: 42px;
+    }
+    
+    #loginform {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        padding: 20px;
+    }
+
+    #loginform h1 {
+        font-size: 54px;
+    }
+
+    #loginform p {
+        font-size: 46px;
+        padding: 15px;
+    }
+
+    #loginform input {
+        font-size: 42px;
+    }
+
+    #chatbox {
+        text-align:left;
+        position: fixed;
+        top: 120px;
+        bottom: 120px;
+        margin:0 auto;
+        margin-bottom:25px;
+        padding:10px;
+        background:rgb(255, 255, 255);
+        width:100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .emoji-menu {
+        width: 100% !important;
+        bottom: 40px !important;
+        zoom: 3;
+        font-size: 20px !important;
+    }
+
+
+    .resize-ta {
+        resize: vertical;
+        max-height: 100px !important;
+        font-size: 42px !important;
+    }
+
+    .emoji-picker-icon {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 50px !important;
+    }
+
+    .emoji-picker-container {
+        position: fixed !important;
+        bottom: 20px;
+        left: 20px;
+        width: calc(90% - 175px);
+        font-size: 42px !important;
+    }
+    #submitmsg {
+        position: fixed;
+        bottom: 19px;
+        right: 20px;
+        width: 210px;
+        height: 103px; 
+        background: hsl(204, 74%, 51%) !important;
+    }
+
+    .emoji-wysiwyg-editor {
+        text-align: left !important;
+        display: block !important;
+        font-size: 42px !important;
+        line-height: 40px !important;
+        padding: 12px !important;
+    }
+    
+    #submit { 
+        width: 160px;
+        height: 100px; 
+    }
+    .button {
+        font-size: 36px !important;
+    }
+    
+    .error { color: #ff0000; }
+    
+    #menu { 
+        padding:12.5px 25px 12.5px 25px;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        width: 100vw;
+        background: white;
+        box-shadow: 0px -200px 130px 130px rgb(20, 20, 20);
+        height: 120px;
+    
+    }
+
+    textarea {
+        font-size: 42px;
+    }
+    
+    .welcome { 
+        float:left; 
+        margin-top: 20px;
+    
+    }
+    
+    .logout { 
+        float:right; 
+        
+    }
+    .logout a {
+        color: white;
+        text-decoration: none;
+    }
+    .logout a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .msgTheirs {
+        margin:10px 25px 10px 25px;
+        width: fit-content;
+        padding: 15px 25px 15px 25px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 50px 50px 50px 50px;
+        color: rgb(0, 0, 0)
+    }
+    .msgMy {
+        width: fit-content;
+        max-width: 90%;
+        padding: 15px 25px 15px 25px;
+        background-color: hsl(204, 74%, 51%);
+        border-radius: 50px 50px 50px 50px;
+        color: white;
+        margin: 10px 25px 10px auto;
+    }
+    .msgCentral {
+        margin:10px 20px 20px 10px;
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+        color: rgb(117, 117, 117)
+    }
+    .message_body {
+        min-width: 100%;
+        display: block;
+        font-size: 48px;
+    }
+
+    .time_stamp_central {
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+    }
+    .sender {
+        margin-right: auto;
+        margin-left: 10px;
+        width: fit-content;
+        color: rgb(0, 0, 0);
+        font-size: 38px;
+        font-weight: bold;
+    }
+}
