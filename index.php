@@ -10,13 +10,14 @@ if(isset($_POST['enter'])){
         $name = stripslashes(htmlspecialchars($_POST['name']));
         if (!isset($_SESSION['name'])) {
             $sql = "INSERT INTO chat (username, date_created, message_text, message_type, message_show)
-            VALUES ('".$name."', '".date("Y-m-d H:i:s")."', '". $name ." se připojil/a!', 2, true)";
+            VALUES ('".$name."', '".date("Y-m-d H:i:s")."', '". $name ." se připojil/a!', 3, true)";
 
             if ($conn->query($sql) !== TRUE) {
                 return "Error: " . $sql . "<br>" . $conn->error;
             }
         }
         $_SESSION['name'] = $name;
+        header('Location: ?room=' . $_POST['room']);
         
     }
     else{

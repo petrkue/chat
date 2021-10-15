@@ -1,5 +1,9 @@
 <?php
     function loginForm(){ 
+        if (isset($_GET['room']))
+            $room = $_GET['room'];
+        else
+            $room = 'general';
         echo '
             <html>
                 <head>
@@ -21,6 +25,7 @@
                                     <input class="input is-info" type="text" placeholder="" name="name">
                                 </div>
                             </div>
+                            <input type="hidden" name="room" value="'. $room .'">
                             <input class="button is-info" type="submit" name="enter" id="enter" value="Vstoupit" />
                         </form>
                     </div>

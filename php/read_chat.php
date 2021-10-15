@@ -72,7 +72,7 @@ if (session_status() === PHP_SESSION_NONE) {
                         
                     </div>';
         }
-        else {
+        else if ($row['message_type'] == 2){
             echo '
                 '. $timestamp .'
                 <div class="message_body">

@@ -40,3 +40,9 @@ $('.emoji-picker-container').keypress(function (e) {
         return false;
     }
 });
+
+//If user wants to end session
+$("#exit").click(function(){
+    var exit = confirm("Opravdu se chcete odhlásit?");
+    if(exit==true){window.location = 'index.php?logout=true';}		
+});

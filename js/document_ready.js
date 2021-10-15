@@ -1,9 +1,5 @@
 $(document).ready(function(){
-	//If user wants to end session
-	$("#exit").click(function(){
-		var exit = confirm("Opravdu se chcete odhlásit?");
-		if(exit==true){window.location = 'index.php?logout=true';}		
-	});
+	
 
     heightToScroll = $("#chatbox").prop("scrollHeight");
     $("#chatbox").animate({ scrollTop: heightToScroll }, 100);
@@ -22,4 +18,5 @@ $( 'textarea' ).ready(function() {
 		$('.emoji-wysiwyg-editor').focus();
   });
 
+  
   
